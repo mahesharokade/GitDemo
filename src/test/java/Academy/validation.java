@@ -33,7 +33,7 @@ public class validation extends base{
 		
 		l=new LandingPage(driver);
 		Assert.assertEquals(l.getTitle().getText(), "FEATURED COURSES1");
-		log.info("text matches");
+		log.info("text matches on landing page");
 		
 		
 				
