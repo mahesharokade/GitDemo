@@ -1,5 +1,5 @@
 package Academy;
 
-public class demo {
+public class Demo {
 
 }
