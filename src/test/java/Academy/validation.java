@@ -49,6 +49,16 @@ public class validation extends base{
 		
 				
 	}
+	//done by gitX
+	@Test
+	public void validatingHeader2() throws IOException {
+		
+		Assert.assertEquals(l.getHeader().getText(), "AN ACADEMY TO LEARN EVERYTHING ABOUT TESTING");
+		log.info("text matches on landing page");
+		
+		
+				
+	}
 	
 	@AfterTest
 	public void tearDown() {
