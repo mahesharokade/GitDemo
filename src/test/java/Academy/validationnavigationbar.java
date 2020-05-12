@@ -48,7 +48,18 @@ public class validationnavigationbar extends base{
 				
 	}
 	
-	
+	//done by gitDemo develop
+		@Test
+		public void validatingnavigationbar3() throws IOException {
+			
+			LandingPage l=new LandingPage(driver);
+			Assert.assertTrue(l.getNavigationBar().isDisplayed());
+			log.info("Navigation bar is displayed on landing page");
+			
+			
+					
+		}
+		
 	@AfterTest
 	public void tearDown() {
 		driver.close();
