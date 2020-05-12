@@ -33,13 +33,13 @@ public class Homepage extends base{
 		//LoginPage lp=new LoginPage(driver);
 		lp.emailAddress().sendKeys(emailAddress);
 		lp.password().sendKeys(passowrd);
-		log.info("succesfully logged");
+		log.info("succesfully logged on login page");//done by mahesh
 		lp.loginButton().click();
-		log.info("succesfully clicked");
+		log.info("succesfully clicked on loginbutton");//done by mahesh
 		ForgotPasswordLink fp=lp.forgotlink();
 		fp.emailAddress().sendKeys("xxxx");
 		fp.sendMeInstructions().click();
-		log.info("succesfully clciked");
+		log.info("succesfully clciked on sendmeinstructions");// done by mahesh
 		
 				
 	}
