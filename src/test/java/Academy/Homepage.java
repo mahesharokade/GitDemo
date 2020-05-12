@@ -21,11 +21,13 @@ public class Homepage extends base{
 	@BeforeTest
 	public void initialize() throws IOException {
 		driver=initializeDriver();
+		log.info("driver initialize");
 		
 	}
 	@Test(dataProvider="getData")
 	public void landingpagevalidation(String emailAddress,String passowrd) throws IOException {
 		driver.get(prop.getProperty("url"));
+		log.info("URL is sucesfully load");
 		LandingPage l=new LandingPage(driver);
 		LoginPage lp=l.getLogin();
 		//LoginPage lp=new LoginPage(driver);
@@ -33,9 +35,11 @@ public class Homepage extends base{
 		lp.password().sendKeys(passowrd);
 		log.info("succesfully logged");
 		lp.loginButton().click();
+		log.info("succesfully clicked");
 		ForgotPasswordLink fp=lp.forgotlink();
 		fp.emailAddress().sendKeys("xxxx");
 		fp.sendMeInstructions().click();
+		log.info("succesfully clciked");
 		
 				
 	}

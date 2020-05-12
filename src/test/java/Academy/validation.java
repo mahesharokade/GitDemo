@@ -25,7 +25,9 @@ public class validation extends base{
 	@BeforeTest
 	public void initialize() throws IOException {
 		driver=initializeDriver();
+		log.info("driver initialize");
 		driver.get(prop.getProperty("url"));
+		log.info("URL is sucesfully load");
 	}
 	
 	@Test
@@ -42,7 +44,7 @@ public class validation extends base{
 	public void validatingHeader() throws IOException {
 		
 		Assert.assertEquals(l.getHeader().getText(), "AN ACADEMY TO LEARN EVERYTHING ABOUT TESTING");
-		log.info("text matches");
+		log.info("text matches on landing page");
 		
 		
 				

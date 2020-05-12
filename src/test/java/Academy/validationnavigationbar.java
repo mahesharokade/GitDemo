@@ -21,6 +21,7 @@ public class validationnavigationbar extends base{
 	@BeforeTest
 	public void initialize() throws IOException {
 		driver=initializeDriver();
+		log.info("driver initialize");
 		driver.get(prop.getProperty("url"));
 		log.info("URL is sucesfully load");
 	}
